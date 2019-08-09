@@ -8,7 +8,8 @@ let
   ];
 
 in
-pkgs.stdenv.mkDerivation {
-  name = "nonbili-nix-deps";
-  inherit buildInputs;
+{
+  inherit zephyr;
+
+  shell = pkgs.mkShell { inherit buildInputs; };
 }
