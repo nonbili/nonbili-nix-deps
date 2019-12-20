@@ -3,12 +3,11 @@
 pkgs.stdenv.mkDerivation rec {
   name = "spago";
 
-  version = "0.10.0.0";
+  version = "0.12.1.0";
 
   src = pkgs.fetchurl {
     url = "https://github.com/spacchetti/spago/releases/download/${version}/linux.tar.gz";
-    sha256 = "0i6bax9h7bq3mkh15d2dbgn6cjs7fb3vac15669lqwhdz8dw0qcx";
-
+    sha256 = "0zvnymdvf94w1m5yhibqdb3jv178ipq4vy13clrgz5ny5icv019k";
   };
 
   setSourceRoot = "sourceRoot=`pwd`";
