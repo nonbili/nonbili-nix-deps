@@ -3,11 +3,11 @@
 pkgs.stdenv.mkDerivation rec {
   name = "purs";
 
-  version = "v0.13.8";
+  version = "v0.14.0";
 
   src = pkgs.fetchurl {
     url = "https://github.com/purescript/purescript/releases/download/${version}/linux64.tar.gz";
-    sha256 = "01xb9sl6rmg02ypdrv4n0mkzmdr5y9rajcdmg9c3j46q7z6q9mxy";
+    sha256 = "1l3i7mxlzb2dkq6ff37rvnaarikxzxj0fg9i2kk26s8pz7vpqgjh";
   };
 
   installPhase = ''
